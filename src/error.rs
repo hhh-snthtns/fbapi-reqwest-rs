@@ -18,13 +18,13 @@ pub enum FbapiError {
     #[error("Facebook unexpected json: {0}")]
     UnExpected(serde_json::Value),
 
-    #[error("Facebook viedo error")]
+    #[error("Facebook video error")]
     VideoError,
 
-    #[error("Facebook viedo check loop timeout error")]
+    #[error("Facebook video check loop timeout error")]
     VideoTimeout,
 
-    #[error("Instagram viedo error: {0}")]
+    #[error("Instagram video error: {0}")]
     IgVideoError(serde_json::Value),
 
     #[error("Copyright violation detected")]
